@@ -1,0 +1,92 @@
+
+<section id="home">
+
+    <div class="container pb-5 justify-content-center align-items-center">
+        <div class="row py-5 text-center text-md-start text-sm-end">
+            <div class="col-lg-5 text-center align-content-center">
+                <h1>
+                    <div class="div text-center display-1 fw-bold text-secondary">Alokkan</div>
+                    <div class="text-center display-3 text-secondary">Auditorium</div>
+                </h1>
+
+                <button class="btn btn-success" (click)="open(content)">Enquire Now</button>
+                <!-- <a href="#footer" class="btn btn-success">Enquire Now</a> -->
+
+                
+              </div>
+              
+            <div class="col-5 d-none d-lg-block">
+                <!-- https://drive.google.com/file/d/1Tk7zFmBQKdh2bsnDHhZdv17XfM4D9QSe/view?usp=sharing -->
+                <iframe src="https://drive.google.com/file/d/1Tk7zFmBQKdh2bsnDHhZdv17XfM4D9QSe/preview" width="540" height="380" allow="autoplay" title="Intro"></iframe>
+            </div>
+        </div>
+
+        <!-- testimonial -->
+        <!-- <div class="row text-justify lead rounded border border-2 d-none d-md-block testimonial">{{InfoContent}} {{InfoContent2}}</div> -->
+
+        <div class="testimonial10 py-5 bg-success-gradiant d-none d-sm-block">
+          <div class="container">
+            <div class="owl-carousel owl-theme text-center testi10">
+              <!-- item -->
+              <div class="item">
+                <div class="quote-bg">
+                  <h3 class="font-weight-light text-white">{{InfoContent}}</h3>
+                </div>
+              </div>
+              <!-- item -->
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal Data -->
+
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">For Booking and Enquiry</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<!-- <div class="container text-start">
+      <form >
+        
+        <div class="form-floating mb-2">
+          <input type="text" class="form-control" id="name" placeholder="eg: Ram Kumar">
+          <label for="name">Name:</label>
+        </div>
+
+
+        <div class="form-floating mb-2">
+          <input type="tel" id="typePhone" class="form-control" placeholder="eg: 9124687510"/>
+          <label for="typePhone">Phone no.:</label>
+
+        </div>
+
+        <div class="form-floating">
+          <select name="" id="booking" class="form-select">
+            <option value="Main Hall" selected>Main Hall</option>
+            <option value="Mini Hall" >Mini Hall</option>
+            <option value="Mini Hall + Dinning" >Mini Hall + Dining</option>
+          </select>
+          <label for="booking">Booking Type</label>
+        </div>
+
+        <div class="container text-center mt-2"><button type="submit" class="btn btn-dark">Submit</button></div>
+
+      </form>
+    </div> -->
+
+    <div class="container text-start">
+      <p class="lead fw-bold">Contact us </p>
+      <p><i class="bi bi-phone-fill"></i> +91 9446477700</p>
+      <p><i class="bi bi-telephone-fill"></i> +91 (0497)27997700</p>
+    </div>
+	</div>
+	<!-- <div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+	</div> -->
+</ng-template>
+
+
