@@ -24,4 +24,6 @@ export class ContactUsComponent {
   onSubmit(){
     console.log(this.form.value);
 
+  }
+
 }

@@ -4,7 +4,8 @@
       <p class="lead text-muted">Contact us for bookings and enquiry!!</p>
   
       <div class="container text-start">
-        <form [formGroup]="form" (ngSubmit)="onSubmit()" action="https://formsubmit.co/229b2223a519b9806d066bd28af47b4c" method="post" (ngSubmit)="submit()">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" action="https://formsubmit.co/229b2223a519b9806d066bd28af47b4c" method="post"> 
+          <!-- (ngSubmit)="submit() -->
           
           <div class="form-floating mb-2">
             <input type="text" class="form-control" name="Name" id="name" placeholder="eg: Ram Kumar" required>
@@ -23,10 +24,10 @@
             </div>
           </div>
 
-          <div class="alert alert-danger">
-            <div *ngIf="f.phone.errors.pattern">Please, Enter 10 digit Mobile Number.</div>
+          <!-- <div class="alert alert-danger">
+            <div *ngIf="f.phone.errors?.pattern">Please, Enter 10 digit Mobile Number.</div>
           </div>
-  
+   -->
           <!-- <div class="alert alert-danger">
             Enter a 10 digit Mobile number
           </div> -->
