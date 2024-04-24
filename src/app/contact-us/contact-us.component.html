@@ -5,29 +5,29 @@
   
       <div class="container text-start">
         <form [formGroup]="form" (ngSubmit)="onSubmit()" action="https://formsubmit.co/229b2223a519b9806d066bd28af47b4c" method="post"> 
-          <!-- (ngSubmit)="submit() -->
           
           <div class="form-floating mb-2">
             <input type="text" class="form-control" name="Name" id="name" placeholder="eg: Ram Kumar" required>
             <label for="name">Name</label>
           </div>
-  
-  
+
+
           <div class="row mb-2 g-1">
             <div class="col form-floating">
               <input type="tel" id="phone" name="phone" class="form-control" placeholder="eg: 9124687510" required formControlName="phone" minlength="10" maxlength="10">
               <label for="typePhone" class="ms-2">Phone no.</label>
             </div>
+            
             <div class="col form-floating">
               <input type="email" id="email" name="Email" class="form-control" placeholder="eg: name@email.com">
               <label for="email" class="ms-2">Email</label>
             </div>
           </div>
 
-          <!-- <div class="alert alert-danger">
+          <!-- <div class="alert alert-danger" *ngIf="f.phone.touched && f.phone.invalid">
             <div *ngIf="f.phone.errors?.pattern">Please, Enter 10 digit Mobile Number.</div>
-          </div>
-   -->
+          </div> -->
+  
           <!-- <div class="alert alert-danger">
             Enter a 10 digit Mobile number
           </div> -->

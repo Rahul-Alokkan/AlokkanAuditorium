@@ -10,6 +10,7 @@ import { FormBuilder, FormGroup, FormControl, Validators, ReactiveFormsModule} f
 export class ContactUsComponent {
 
   public form: FormGroup;
+
   
   constructor(private formBuilder: FormBuilder) {
     this.form = formBuilder.group({
@@ -23,7 +24,6 @@ export class ContactUsComponent {
    
   onSubmit(){
     console.log(this.form.value);
-
   }
 
 }
