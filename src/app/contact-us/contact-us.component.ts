@@ -9,21 +9,25 @@ import { FormBuilder, FormGroup, FormControl, Validators, ReactiveFormsModule} f
 })
 export class ContactUsComponent {
 
-  public form: FormGroup;
+  // myForm!: FormGroup;
 
-  
-  constructor(private formBuilder: FormBuilder) {
-    this.form = formBuilder.group({
-      phone: ['', [Validators.required, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]]
-    })
-  }
-    
-  get f(){
-    return this.form.controls;
-  }
-   
-  onSubmit(){
-    console.log(this.form.value);
-  }
+  // constructor(private fb: FormBuilder) {}
+
+  // ngOnInit() {
+  //   this.myForm = this.fb.group({
+  //     phone: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]]
+  //   });
+  // }
+
+  // get phone() {
+  //   return this.myForm.get('phone');
+  // }
+
+  // onSubmit() {
+  //   // Handle form submission
+  //   if (this.myForm.valid) {
+  //     console.log('Form submitted successfully with mobile number:', this.myForm.value.phone);
+  //   }
+  // }
 
 }

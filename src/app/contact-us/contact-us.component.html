@@ -4,7 +4,8 @@
       <p class="lead text-muted">Contact us for bookings and enquiry!!</p>
   
       <div class="container text-start">
-        <form [formGroup]="form" (ngSubmit)="onSubmit()" action="https://formsubmit.co/229b2223a519b9806d066bd28af47b4c" method="post"> 
+        <!-- <form [formGroup]="myForm" (ngSubmit)="onSubmit()" action="https://formsubmit.co/229b2223a519b9806d066bd28af47b4c" method="post"> -->
+        <form action="" method="post"> 
           
           <div class="form-floating mb-2">
             <input type="text" class="form-control" name="Name" id="name" placeholder="eg: Ram Kumar" required>
@@ -24,6 +25,11 @@
             </div>
           </div>
 
+          <!-- <div *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+            <div *ngIf="phone.errors.required">Mobile number is required.</div>
+            <div *ngIf="phone.errors.pattern">Enter a valid mobile number.</div>
+          </div> -->
+
           <!-- <div class="alert alert-danger" *ngIf="f.phone.touched && f.phone.invalid">
             <div *ngIf="f.phone.errors?.pattern">Please, Enter 10 digit Mobile Number.</div>
           </div> -->
@@ -41,7 +47,8 @@
             <label for="booking">Booking Type</label>
           </div>
   
-          <div class="container text-center mt-2"><button type="submit" class="btn btn-dark" [disabled]="!form.valid">Submit</button></div>
+          <!-- <div class="container text-center mt-2"><button type="submit" class="btn btn-dark" [disabled]="!myForm.valid">Submit</button></div> -->
+          <div class="container text-center mt-2"><button type="submit" class="btn btn-dark">Submit</button></div>
   
         </form>
       </div>
