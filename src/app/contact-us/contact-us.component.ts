@@ -9,21 +9,21 @@ import { FormBuilder, FormGroup, FormControl, Validators, ReactiveFormsModule} f
 })
 export class ContactUsComponent {
 
-  public form: FormGroup;
+  // public form: FormGroup;
   
-  constructor(private formBuilder: FormBuilder) {
-    this.form = formBuilder.group({
-      phone: ['', [Validators.required, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]]
-    })
-  }
+  // constructor(private formBuilder: FormBuilder) {
+  //   this.form = formBuilder.group({
+  //     phone: ['', [Validators.required, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]]
+  //   })
+  // }
     
-  get f(){
-    return this.form.controls;
-  }
+  // get f(){
+  //   return this.form.controls;
+  // }
    
-  onSubmit(){
-    console.log(this.form.value);
+  // onSubmit(){
+  //   console.log(this.form.value);
 
-  }
+  // }
 
 }
